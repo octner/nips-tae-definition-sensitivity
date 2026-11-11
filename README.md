@@ -20,17 +20,15 @@ This repository contains the code, the analysis tables and the prompt registry. 
 ```
 
 In the paper, we measure how much the labels of a large language model (LLM) change when only the definition in the
-prompt changes. We test six concepts, which are protest, assassination, terrorism, hate speech, climate contrarianism
-and fake news. For each concept, we quote competing definitions from published codebooks and studies. Three models
+prompt changes. We test six concepts: protest, assassination, terrorism, hate speech, climate contrarianism,
+and fake news. We quote competing definitions from published codebooks and studies for each concept. Three models
 label each text INCLUDE, EXCLUDE or INDETERMINATE with each definition, and INDETERMINATE means that the text does not
-state what the definition requires. The models are Claude Sonnet 5 (Sonnet) and two open-weight models, Gemma 4 31B
+state what the definition requires. We used Claude Sonnet 5 (Sonnet) and two open-weight models, Gemma 4 31B
 (Gemma) and Qwen 3.6 27B (Qwen).
 
-For two definitions, the disagreement rate is the share of texts to which a model assigns different labels.
-Definition sensitivity is the mean disagreement rate over the pairs of competing definitions of a concept. As a
-control, we wrote two paraphrases of seven definitions, one for each concept and a second one for protest, and kept
-their requirements unchanged. The paraphrase floor is the mean disagreement rate over the pairs of wordings of the same
-definition. In a comprehension check, we also asked each model what each definition requires, without a text to label.
+The disagreement rate is the share of texts to which a model assigns different labels to two definitions.
+Definition sensitivity is the mean disagreement rate over the pairs of competing definitions of a concept.
+We introduced paraphrase floor – the mean disagreement rate in the pairs of wordings of the same definition.
 
 ## Contents
 
@@ -40,25 +38,19 @@ definition. In a comprehension check, we also asked each model what each definit
 | `tables/` | The analysis tables |
 | `code/` | The code for the annotation, the comprehension check, the analysis and the verification script |
 
-Each prompt pairs one wording of a definition with a query, and the query is the same for all prompts of a concept.
-Each record of the prompt registry contains the IDs of the concept (`construct`), the definition (`def_id`) and the
+Each prompt pairs one wording of a definition with a query, which is the same for all prompts of a concept.
+Each record of the prompt registry contains the IDs of the concept (`construct`), the definition (`def_id`), and the
 wording (`impl_id`). It also contains the hash of the prompt (`instrument_sha`) and an estimated token count
 (`n_tokens_est`). The last two fields are the version of the prompt set (`suite_version`) and the path of the prompt
 file (`file`).
 
-Each results file has a sidecar file with the hash of its prompt and the hash of the sample. Before our code added
-labels to a results file, it checked these hashes against the registry and the sample. The prompts for protest and
-assassination have version `tae-0.1`. The prompts for the other four concepts have version `tae-0.2`, because we
-pre-registered these concepts later (Appendix A of the paper).
+## This repository does not contain
 
-## What this repository does not contain
-
-- **The texts.** The news-derived texts are licensed, so we cannot redistribute them. Section 3.1 of the paper
-  describes their sources and how we drew the sample. We drew the texts for hate speech, climate contrarianism and
+- **The texts.** The news-derived texts are licensed; we cannot redistribute them (refer to Section 3.1 of the paper). We drew the texts for hate speech, climate contrarianism and
   fake news from public datasets (Borkan et al. 2019, Diggelmann et al. 2020, Wang 2017). The script
-  `code/sample_expansion.py` draws them again from these datasets.
-- **The prompt files.** The registry contains the hash of each prompt. We quoted the definitions in the prompts from
-  the codebooks and studies in the table below, and Section 3.2 of the paper cites them.
+  `code/sample_expansion.py` retrieves them again from these datasets.
+- **The prompt files.**  We quoted the definitions in the prompts from
+  the codebooks and studies in the table below (Section 3.2 for more information).
 - **The results files.** The labels that the models assigned are not part of this release.
 
 | Concept | `def_id` | Source of the definition |
@@ -104,11 +96,11 @@ This table lists the names that the code and the tables use in place of the term
 | transmission | definition sensitivity |
 | gate, G2 | comprehension check |
 | chunk | batch, a group of at most 50 texts that Sonnet labelled with one prompt |
-| frame_sha | the hash of a sample of texts that we froze before the main annotation run |
+| frame_sha | the hash of a sample of texts that we pre-registered before the main annotation run |
 
 ## Tables
 
-| File | What it reports |
+| File | Description |
 |---|---|
 | `an_manifest.json` | The models, the bootstrap settings, the hashes of the news-derived sample and of the sample from the public datasets, the number of assassination texts that we excluded because the download returned binary files, and the number of analysed texts for each concept |
 | `t1_verdict_matrix.csv` | For each model, concept and prompt, the number of missing labels and the share of each label |
@@ -125,14 +117,13 @@ This table lists the names that the code and the tables use in place of the term
 
 ## How to run the code
 
-The scripts need the texts, the prompt files and the results files, which this repository does not contain. So you
-can read the code to check the method, but the code cannot recompute the tables from this repository.
+The scripts need the texts, the prompt files and the results files, which this repository does not contain, so make sure to obtain them beforehand.
 
 The scripts need Python 3.11 with pandas, NumPy, pyarrow and Matplotlib. The scripts `label.py` and `gate.py` also need
 the `openai` Python package, which sends the requests to the vLLM server of each open-weight model. The file
 `code/_paths.py` lists the folder of each input, and this table describes these folders.
 
-| Folder | What the scripts expect in it |
+| Folder | What the scripts expect to find there |
 |---|---|
 | `data/` | The two frozen samples, `sample.parquet` and `sample_expansion.parquet`, and the list of excluded texts, `corrupt_fetch_ids.csv` |
 | `data/raw/expansion/` | The three public datasets that `sample_expansion.py` reads |
@@ -145,7 +136,7 @@ the `openai` Python package, which sends the requests to the vLLM server of each
 | `out/sonnet_batches/` | The texts of each batch that Sonnet labelled |
 
 For the labels that the paper reports, we served Gemma and Qwen with vLLM 0.19.1 and transformers 5.14.1. The file
-`code/annotators.json` records the revision of each open-weight model. For protest and assassination, we served each
+`code/annotators.json` records the revision of each open-weight model. For protest and assassination, we used each
 open-weight model on one Nvidia A100 graphics processing unit (GPU) with 80 GB of memory. Sonnet ran through an agentic
 command-line harness, which is not part of this repository.
 
