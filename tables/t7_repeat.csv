@@ -1,0 +1,9 @@
+arm,construct,def_id,impl_id,chunk,n_compared,n_identical,agreement
+claude_sonnet5,assassination,cnts,impl_0,c000,41,37,0.9024390243902439
+claude_sonnet5,assassination,gtd,impl_0,c000,41,35,0.8536585365853658
+claude_sonnet5,protest,acled,impl_0,c000,50,47,0.94
+claude_sonnet5,protest,ccc_2021,impl_0,c000,50,48,0.96
+claude_sonnet5,climate_contrarian,cards,impl_0,c000,50,47,0.94
+claude_sonnet5,fake_news,lazer,impl_0,c000,50,0,0.0
+claude_sonnet5,hate_speech,davidson,impl_0,c000,50,47,0.94
+claude_sonnet5,terrorism,gtd_crit,impl_0,c000,49,46,0.9387755102040817

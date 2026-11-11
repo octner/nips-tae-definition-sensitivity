@@ -1,0 +1,29 @@
+{
+ "arms": [
+  "gemma4_31b",
+  "qwen36_27b",
+  "claude_sonnet5"
+ ],
+ "n_boot": 2000,
+ "seed": 42,
+ "frame_sha": "be53413d3dd1",
+ "corrupt_excluded": 188,
+ "constructs": [
+  "protest",
+  "assassination",
+  "hate_speech",
+  "climate_contrarian",
+  "fake_news",
+  "terrorism"
+ ],
+ "frame_sha_expansion": "b60a8b7535a9",
+ "analyzable": {
+  "protest": 3249,
+  "assassination": 1471,
+  "hate_speech": 600,
+  "climate_contrarian": 600,
+  "fake_news": 600,
+  "terrorism": 1471
+ },
+ "missing_rule": "API_FAIL verdict=null -> pair dropped"
+}

@@ -1,0 +1,43 @@
+{
+  "_comment": [
+    "This file lists the three models, and the revision and request settings of each open-weight model.",
+    "The revision is a commit of the model's Hugging Face repository.",
+    "The fields hf_repo, revision, model, port and dtype are five arguments of the vllm serve command in README.md.",
+    "For the reported labels, we served both open-weight models with vLLM 0.19.1, torch 2.10.0 and CUDA 12.8.",
+    "The scripts label.py and gate.py send a model's requests to the URL in the environment variable that base_url_env names.",
+    "If that variable is not set, they use the port below on 127.0.0.1."
+  ],
+
+  "annotators": {
+    "qwen36_27b": {
+      "provider": "vllm",
+      "hf_repo": "Qwen/Qwen3.6-27B",
+      "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+      "dtype": "bfloat16",
+      "model": "qwen36-27b",
+      "port": 8001,
+      "base_url_env": "TAE_VLLM_URL_QWEN36_27B",
+      "response_format": "json_schema",
+      "params": {"temperature": 0, "seed": 42, "max_tokens": 300},
+      "extra_body": {"chat_template_kwargs": {"enable_thinking": false}}
+    },
+
+    "gemma4_31b": {
+      "provider": "vllm",
+      "hf_repo": "google/gemma-4-31B-it",
+      "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+      "dtype": "bfloat16",
+      "model": "gemma4-31b",
+      "port": 8003,
+      "base_url_env": "TAE_VLLM_URL_GEMMA4_31B",
+      "response_format": "json_schema",
+      "params": {"temperature": 0, "seed": 42, "max_tokens": 300}
+    },
+
+    "claude_sonnet5": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "note": "Sonnet ran through an agentic command-line harness, not through label.py."
+    }
+  }
+}

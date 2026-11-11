@@ -1,0 +1,4 @@
+arm,n_gtd_success_include,nested_in_gtd
+gemma4_31b,336,0.9553571428571429
+qwen36_27b,197,0.9035532994923858
+claude_sonnet5,377,0.9098143236074271

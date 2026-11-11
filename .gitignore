@@ -1,0 +1,13 @@
+# Inputs and outputs that this repository does not release
+/data/
+/defs/
+/out/
+/figs/
+/paper/
+
+# Python
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store

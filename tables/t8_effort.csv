@@ -1,0 +1,4 @@
+pair,straddles_split,disagreement,n
+protest__acled__impl_0~protest__acled__impl_1,True,0.1505078485687904,3249
+protest__acled__impl_0~protest__acled__impl_2,True,0.15974145891043398,3249
+protest__acled__impl_1~protest__acled__impl_2,False,0.18344105878731917,3249

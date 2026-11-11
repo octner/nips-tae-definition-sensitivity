@@ -1,0 +1,353 @@
+[
+  {
+    "construct": "assassination",
+    "def_id": "cnts",
+    "impl_id": "impl_0",
+    "instrument_sha": "69fd8b71910a",
+    "file": "defs/instruments/assassination/cnts__impl_0.md",
+    "n_tokens_est": 272,
+    "suite_version": "tae-0.1"
+  },
+  {
+    "construct": "assassination",
+    "def_id": "gtd",
+    "impl_id": "impl_0",
+    "instrument_sha": "203781277c7e",
+    "file": "defs/instruments/assassination/gtd__impl_0.md",
+    "n_tokens_est": 701,
+    "suite_version": "tae-0.1"
+  },
+  {
+    "construct": "assassination",
+    "def_id": "gtd",
+    "impl_id": "impl_1",
+    "instrument_sha": "f554997aab78",
+    "file": "defs/instruments/assassination/gtd__impl_1.md",
+    "n_tokens_est": 691,
+    "suite_version": "tae-0.1"
+  },
+  {
+    "construct": "assassination",
+    "def_id": "gtd",
+    "impl_id": "impl_2",
+    "instrument_sha": "164ff89f5065",
+    "file": "defs/instruments/assassination/gtd__impl_2.md",
+    "n_tokens_est": 661,
+    "suite_version": "tae-0.1"
+  },
+  {
+    "construct": "assassination",
+    "def_id": "gtd_success",
+    "impl_id": "impl_0",
+    "instrument_sha": "297d3e16b31e",
+    "file": "defs/instruments/assassination/gtd_success__impl_0.md",
+    "n_tokens_est": 751,
+    "suite_version": "tae-0.1"
+  },
+  {
+    "construct": "assassination",
+    "def_id": "targeted_killing",
+    "impl_id": "impl_0",
+    "instrument_sha": "88cd849fe39c",
+    "file": "defs/instruments/assassination/targeted_killing__impl_0.md",
+    "n_tokens_est": 301,
+    "suite_version": "tae-0.1"
+  },
+  {
+    "construct": "climate_contrarian",
+    "def_id": "capstick",
+    "impl_id": "impl_0",
+    "instrument_sha": "95b6259bce52",
+    "file": "defs/instruments/climate_contrarian/capstick__impl_0.md",
+    "n_tokens_est": 334,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "climate_contrarian",
+    "def_id": "cards",
+    "impl_id": "impl_0",
+    "instrument_sha": "3cee0aa40cc7",
+    "file": "defs/instruments/climate_contrarian/cards__impl_0.md",
+    "n_tokens_est": 453,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "climate_contrarian",
+    "def_id": "cards",
+    "impl_id": "impl_1",
+    "instrument_sha": "ba5d8de8ee29",
+    "file": "defs/instruments/climate_contrarian/cards__impl_1.md",
+    "n_tokens_est": 462,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "climate_contrarian",
+    "def_id": "cards",
+    "impl_id": "impl_2",
+    "instrument_sha": "cbb01eddc006",
+    "file": "defs/instruments/climate_contrarian/cards__impl_2.md",
+    "n_tokens_est": 475,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "climate_contrarian",
+    "def_id": "cook",
+    "impl_id": "impl_0",
+    "instrument_sha": "02040f9eefa2",
+    "file": "defs/instruments/climate_contrarian/cook__impl_0.md",
+    "n_tokens_est": 492,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "climate_contrarian",
+    "def_id": "rahmstorf",
+    "impl_id": "impl_0",
+    "instrument_sha": "eb5d9217121a",
+    "file": "defs/instruments/climate_contrarian/rahmstorf__impl_0.md",
+    "n_tokens_est": 325,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "fake_news",
+    "def_id": "allcott",
+    "impl_id": "impl_0",
+    "instrument_sha": "7c717f86c256",
+    "file": "defs/instruments/fake_news/allcott__impl_0.md",
+    "n_tokens_est": 459,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "fake_news",
+    "def_id": "gelfert",
+    "impl_id": "impl_0",
+    "instrument_sha": "8b46cdf31120",
+    "file": "defs/instruments/fake_news/gelfert__impl_0.md",
+    "n_tokens_est": 364,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "fake_news",
+    "def_id": "lazer",
+    "impl_id": "impl_0",
+    "instrument_sha": "fc6e6c69ec27",
+    "file": "defs/instruments/fake_news/lazer__impl_0.md",
+    "n_tokens_est": 355,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "fake_news",
+    "def_id": "lazer",
+    "impl_id": "impl_1",
+    "instrument_sha": "d57b256088f4",
+    "file": "defs/instruments/fake_news/lazer__impl_1.md",
+    "n_tokens_est": 373,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "fake_news",
+    "def_id": "lazer",
+    "impl_id": "impl_2",
+    "instrument_sha": "11671a4ea97c",
+    "file": "defs/instruments/fake_news/lazer__impl_2.md",
+    "n_tokens_est": 372,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "fake_news",
+    "def_id": "zhou",
+    "impl_id": "impl_0",
+    "instrument_sha": "15886776189b",
+    "file": "defs/instruments/fake_news/zhou__impl_0.md",
+    "n_tokens_est": 375,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "hate_speech",
+    "def_id": "davidson",
+    "impl_id": "impl_0",
+    "instrument_sha": "e30b7962d99e",
+    "file": "defs/instruments/hate_speech/davidson__impl_0.md",
+    "n_tokens_est": 414,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "hate_speech",
+    "def_id": "davidson",
+    "impl_id": "impl_1",
+    "instrument_sha": "6d0e19d6409e",
+    "file": "defs/instruments/hate_speech/davidson__impl_1.md",
+    "n_tokens_est": 405,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "hate_speech",
+    "def_id": "davidson",
+    "impl_id": "impl_2",
+    "instrument_sha": "cda5e1b1b960",
+    "file": "defs/instruments/hate_speech/davidson__impl_2.md",
+    "n_tokens_est": 423,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "hate_speech",
+    "def_id": "degibert",
+    "impl_id": "impl_0",
+    "instrument_sha": "070526befcff",
+    "file": "defs/instruments/hate_speech/degibert__impl_0.md",
+    "n_tokens_est": 310,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "hate_speech",
+    "def_id": "founta",
+    "impl_id": "impl_0",
+    "instrument_sha": "0d7aabd8d061",
+    "file": "defs/instruments/hate_speech/founta__impl_0.md",
+    "n_tokens_est": 322,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "hate_speech",
+    "def_id": "waseem_hovy",
+    "impl_id": "impl_0",
+    "instrument_sha": "73e93ab76109",
+    "file": "defs/instruments/hate_speech/waseem_hovy__impl_0.md",
+    "n_tokens_est": 454,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "protest",
+    "def_id": "acled",
+    "impl_id": "impl_0",
+    "instrument_sha": "0257e8368aa3",
+    "file": "defs/instruments/protest/acled__impl_0.md",
+    "n_tokens_est": 439,
+    "suite_version": "tae-0.1"
+  },
+  {
+    "construct": "protest",
+    "def_id": "acled",
+    "impl_id": "impl_1",
+    "instrument_sha": "6a4858908ac5",
+    "file": "defs/instruments/protest/acled__impl_1.md",
+    "n_tokens_est": 440,
+    "suite_version": "tae-0.1"
+  },
+  {
+    "construct": "protest",
+    "def_id": "acled",
+    "impl_id": "impl_2",
+    "instrument_sha": "5254911a22ff",
+    "file": "defs/instruments/protest/acled__impl_2.md",
+    "n_tokens_est": 515,
+    "suite_version": "tae-0.1"
+  },
+  {
+    "construct": "protest",
+    "def_id": "ccc_2021",
+    "impl_id": "impl_0",
+    "instrument_sha": "33aa46fd3f40",
+    "file": "defs/instruments/protest/ccc_2021__impl_0.md",
+    "n_tokens_est": 593,
+    "suite_version": "tae-0.1"
+  },
+  {
+    "construct": "protest",
+    "def_id": "ccc_2024",
+    "impl_id": "impl_0",
+    "instrument_sha": "cc8d58fcfc5d",
+    "file": "defs/instruments/protest/ccc_2024__impl_0.md",
+    "n_tokens_est": 595,
+    "suite_version": "tae-0.1"
+  },
+  {
+    "construct": "protest",
+    "def_id": "cnts_agd",
+    "impl_id": "impl_0",
+    "instrument_sha": "2bccfe4769a9",
+    "file": "defs/instruments/protest/cnts_agd__impl_0.md",
+    "n_tokens_est": 409,
+    "suite_version": "tae-0.1"
+  },
+  {
+    "construct": "protest",
+    "def_id": "mm",
+    "impl_id": "impl_0",
+    "instrument_sha": "018224f78b86",
+    "file": "defs/instruments/protest/mm__impl_0.md",
+    "n_tokens_est": 688,
+    "suite_version": "tae-0.1"
+  },
+  {
+    "construct": "protest",
+    "def_id": "mm",
+    "impl_id": "impl_1",
+    "instrument_sha": "31793294c7cb",
+    "file": "defs/instruments/protest/mm__impl_1.md",
+    "n_tokens_est": 635,
+    "suite_version": "tae-0.1"
+  },
+  {
+    "construct": "protest",
+    "def_id": "mm",
+    "impl_id": "impl_2",
+    "instrument_sha": "f6f30bb5879e",
+    "file": "defs/instruments/protest/mm__impl_2.md",
+    "n_tokens_est": 655,
+    "suite_version": "tae-0.1"
+  },
+  {
+    "construct": "terrorism",
+    "def_id": "enders_sandler",
+    "impl_id": "impl_0",
+    "instrument_sha": "479d4f3712dc",
+    "file": "defs/instruments/terrorism/enders_sandler__impl_0.md",
+    "n_tokens_est": 595,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "terrorism",
+    "def_id": "gtd_crit",
+    "impl_id": "impl_0",
+    "instrument_sha": "485cc1a0e870",
+    "file": "defs/instruments/terrorism/gtd_crit__impl_0.md",
+    "n_tokens_est": 571,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "terrorism",
+    "def_id": "gtd_crit",
+    "impl_id": "impl_1",
+    "instrument_sha": "ad72367d4095",
+    "file": "defs/instruments/terrorism/gtd_crit__impl_1.md",
+    "n_tokens_est": 506,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "terrorism",
+    "def_id": "gtd_crit",
+    "impl_id": "impl_2",
+    "instrument_sha": "b177212a3261",
+    "file": "defs/instruments/terrorism/gtd_crit__impl_2.md",
+    "n_tokens_est": 527,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "terrorism",
+    "def_id": "schmid",
+    "impl_id": "impl_0",
+    "instrument_sha": "8de39fd07e57",
+    "file": "defs/instruments/terrorism/schmid__impl_0.md",
+    "n_tokens_est": 470,
+    "suite_version": "tae-0.2"
+  },
+  {
+    "construct": "terrorism",
+    "def_id": "weinberg",
+    "impl_id": "impl_0",
+    "instrument_sha": "faafe5fd1edf",
+    "file": "defs/instruments/terrorism/weinberg__impl_0.md",
+    "n_tokens_est": 332,
+    "suite_version": "tae-0.2"
+  }
+]
