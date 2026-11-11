@@ -1,8 +1,5 @@
 # Measuring Definition Sensitivity in LLM Annotation of Social Science Concepts
 
-Bogdan Mamaev (Deakin University), Qizhou Wang (University of Melbourne), Matteo Vergani (Deakin University) and
-Christopher Leckie (University of Melbourne)
-
 This repository contains the code, the analysis tables and the prompt registry. The paper:
 
 ```bibtex
